@@ -1,3 +1,6 @@
+var concat = Array.prototype.concat;
+var filter = Array.prototype.filter;
+var isArray = Array.isArray;
 /**
  * Concatenates multiple arrays end-to-end.
  * - if some argument is not an array, it will be ignored.
@@ -6,6 +9,8 @@
  * @param arrays - Arrays to concatenate.
  * @returns The concatenated array.
  */
-declare function concatArr<T extends any[] = unknown[]>(...arrays: unknown[]): T;
-
-export = concatArr;
+export function concatArr(...args: any[]): any[] {
+  if (arguments.length === 0) return [];
+  var b = filter.call(arguments, isArray);
+  return concat.apply([], b);
+}
