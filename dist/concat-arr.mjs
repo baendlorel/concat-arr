@@ -1,1 +1,1 @@
-concat=Array.prototype.concat,filter=Array.prototype.filter,isArray=Array.isArray,exports.concatArr=function(){return 0===arguments.length?[]:(b=filter.call(arguments,isArray),concat.apply([],b))};
+var r=Array.prototype.concat,t=Array.prototype.filter,a=Array.isArray;function e(e){if(0===arguments.length)return[];var o=t.call(arguments,a);return r.apply([],o)}export{e as concatArr};

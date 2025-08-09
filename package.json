@@ -1,8 +1,4 @@
 {
-  "scripts": {
-    "build": "rimraf dist && rollup -c && cp lib/index.d.ts dist/index.d.ts",
-    "test": "clear && node test.js"
-  },
   "name": "concat-arr",
   "version": "1.0.0",
   "author": {
@@ -16,6 +12,10 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c && cp lib/index.d.ts dist/index.d.ts",
+    "test": "clear && node tests/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/baendlorel/concat-arr.git"

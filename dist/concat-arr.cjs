@@ -1,1 +1,1 @@
-"use strict";concat=Array.prototype.concat,filter=Array.prototype.filter,isArray=Array.isArray,exports.concatArr=function(){return 0===arguments.length?[]:(b=filter.call(arguments,isArray),concat.apply([],b))};
+"use strict";var r=Array.prototype.concat,t=Array.prototype.filter,a=Array.isArray;exports.concatArr=function(e){if(0===arguments.length)return[];var o=t.call(arguments,a);return r.apply([],o)};
