@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-// import { concatArr } from '../lib/index.js';
-import { concatArr } from '../dist/index.js';
+// import { concatArr } from '../src/index.js';
+import { concatArr } from '../dist/index.mjs';
+
+console.log('concatArr', concatArr);
 
 test('concatenates number arrays', (t) => {
   const arr1 = [1, 2];

@@ -1,4 +1,4 @@
-import pkg from './package.json' with { type: "json" };
+import { readFileSync } from 'fs';
 import path from 'path';
 import dts from 'rollup-plugin-dts';
 import typescript from '@rollup/plugin-typescript';
@@ -9,6 +9,7 @@ import terser from '@rollup/plugin-terser';
 import babel from '@rollup/plugin-babel';
 import replace from '@rollup/plugin-replace';
 
+const pkg = JSON.parse(readFileSync('./package.json', 'utf-8'));
 const tsconfigFile = './tsconfig.json';
 
 /**
@@ -23,7 +24,11 @@ export default [
         file: 'dist/index.js',
         format: 'umd',
         sourcemap: false,
-        name:'concatArr', 
+        name: '__kskbtmg',
+      },
+      {
+        file: 'dist/index.mjs',
+        format: 'esm', // ESM，支持 import
       },
     ],
 

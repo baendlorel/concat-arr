@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "build": "rimraf dist && rollup -c",
-    "test": "clear && node tests/index.js"
+    "test": "clear && jest"
   },
   "repository": {
     "type": "git",
