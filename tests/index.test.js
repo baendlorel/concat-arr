@@ -1,5 +1,5 @@
 const { describe, it, expect } = require('@jest/globals');
-const concatArr = require('../dist/index.js');
+const { concatArr } = require('../dist/index.js');
 
 describe('concatArr', () => {
   it('concatenates number arrays', () => {

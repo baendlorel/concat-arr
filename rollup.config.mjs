@@ -26,10 +26,6 @@ export default [
         sourcemap: false,
         name: '__kskbtmg',
       },
-      {
-        file: 'dist/index.mjs',
-        format: 'esm', // ESM，支持 import
-      },
     ],
 
     plugins: [

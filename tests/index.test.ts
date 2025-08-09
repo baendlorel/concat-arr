@@ -1,6 +1,5 @@
 import { describe, it, expect } from '@jest/globals';
-
-const concatArr = require('../dist/index.js');
+import { concatArr } from '../src';
 
 describe('concatArr', () => {
   it('concatenates number arrays', () => {
