@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "rollup -c",
+    "build": "rimraf dist && rollup -c && cp lib/index.d.ts dist/index.d.ts",
     "test": "clear && node test.js"
   },
   "name": "concat-arr",
@@ -13,6 +13,9 @@
   "main": "index.js",
   "types": "index.d.ts",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/baendlorel/concat-arr.git"
@@ -30,6 +33,8 @@
   },
   "homepage": "https://github.com/baendlorel/concat-arr#readme",
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rimraf": "^6.0.1",
     "rollup": "^4.46.2"
   }
 }

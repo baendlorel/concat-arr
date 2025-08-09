@@ -1,8 +1,1 @@
-c = Array.prototype.concat;
-f = Array.prototype.filter;
-i = Array.isArray;
-exports.concatArr = function () {
-  if (arguments.length === 0) return [];
-  b = f.call(arguments, i);
-  return c.apply([], b);
-};
+concat=Array.prototype.concat,filter=Array.prototype.filter,isArray=Array.isArray,exports.concatArr=function(){return 0===arguments.length?[]:(b=filter.call(arguments,isArray),concat.apply([],b))};
