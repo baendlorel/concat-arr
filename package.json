@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "build": "rollup -c",
+    "test": "clear && node test.js"
+  },
+  "name": "concat-arr",
+  "version": "1.0.0",
+  "author": {
+    "name": "KasukabeTsumugi",
+    "email": "futami16237@gmail.com"
+  },
+  "description": "A simple utility to concatenate multiple arrays end-to-end.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baendlorel/concat-arr.git"
+  },
+  "keywords": [
+    "array",
+    "concat",
+    "utility",
+    "javascript",
+    "npm"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baendlorel/concat-arr/issues"
+  },
+  "homepage": "https://github.com/baendlorel/concat-arr#readme",
+  "devDependencies": {
+    "rollup": "^4.46.2"
+  }
+}
