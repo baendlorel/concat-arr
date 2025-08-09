@@ -3,6 +3,7 @@
 A super simple utility to concatenate multiple arrays end-to-end.
 
 ## Features
+
 - Only concatenates arguments that are arrays. Non-array arguments are ignored.
 - Returns an empty array if no valid arrays are provided.
 - No dependencies, minimal and fast.
@@ -31,4 +32,5 @@ concatArr(); // []
 - **Returns**: A new array containing all elements from the input arrays, in order. If no array arguments are given, returns an empty array.
 
 ## License
+
 MIT
