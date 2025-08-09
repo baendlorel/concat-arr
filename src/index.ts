@@ -1,6 +1,8 @@
-var concat = Array.prototype.concat;
-var filter = Array.prototype.filter;
-var isArray = Array.isArray;
+const concat = Array.prototype.concat;
+const filter = Array.prototype.filter;
+const isArrayArg = [Array.isArray];
+const apply = Reflect.apply;
+
 /**
  * Concatenates multiple arrays end-to-end.
  * - if some argument is not an array, it will be ignored.
@@ -10,7 +12,9 @@ var isArray = Array.isArray;
  * @returns The concatenated array.
  */
 export function concatArr(...args: any[]): any[] {
-  if (arguments.length === 0) return [];
-  var b = filter.call(arguments, isArray);
-  return concat.apply([], b);
+  if (args.length === 0) {
+    return [];
+  }
+  const b = apply(filter, args, isArrayArg);
+  return apply(concat, [], b);
 }

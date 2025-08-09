@@ -22,12 +22,10 @@ export default [
     output: [
       {
         file: 'dist/index.js',
-        format: 'umd',
+        format: 'esm',
         sourcemap: false,
-        name: '__kskbtmg',
       },
     ],
-
     plugins: [
       alias({
         entries: [{ find: /^@/, replacement: path.resolve(import.meta.dirname, 'src') }],
