@@ -10,6 +10,7 @@ const apply = Reflect.apply;
  * - if no arguments are provided, it returns an empty array.
  * @param arrays - Arrays to concatenate.
  * @returns The concatenated array.
+ * __PKG_INFO__
  */
 export function concatArr(...args: any[]): any[] {
   if (args.length === 0) {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { concatArr } from '../src';
+import { concatArr } from '../src/index.js';
 
 describe('concatArr', () => {
   it('concatenates number arrays', () => {
