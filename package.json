@@ -1,6 +1,6 @@
 {
   "name": "concat-arr",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "author": {
     "name": "KasukabeTsumugi",
     "email": "futami16237@gmail.com"
@@ -49,6 +49,7 @@
     "@types/node": "^24.0.4",
     "add": "^2.0.6",
     "eslint": "^9.30.0",
+    "prettier": "^3.6.2",
     "rimraf": "^6.0.1",
     "rollup": "^4.44.1",
     "rollup-plugin-dts": "^6.2.1",
