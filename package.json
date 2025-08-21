@@ -5,7 +5,8 @@
     "name": "KasukabeTsumugi",
     "email": "futami16237@gmail.com"
   },
-  "description": "A simple utility to concatenate multiple arrays end-to-end.",
+  "description": "A simple utility to concatenate multiple arrays end-to-end. Ignores non-array inputs",
+  "description_zh": "简易的合并数组工具，忽略所有非数组元素",
   "type": "module",
   "exports": {
     "import": "./dist/index.mjs",
