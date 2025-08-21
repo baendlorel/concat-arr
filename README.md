@@ -4,6 +4,8 @@ A super simple utility to concatenate multiple arrays end-to-end.
 
 > Recommended: set "type": "module" in your package.json to use this module with ES6 imports.
 
+For more awesome packages, check out [my homepage💛](https://baendlorel.github.io/?repoType=npm)
+
 ## Features
 
 - Only concatenates arguments that are arrays. Non-array arguments are ignored.
